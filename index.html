@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">My Portfolio</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#works">Works</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Hello, I'm <span class="highlight">Your Name</span></h1>
+      <p class="tagline">Web Developer & Designer</p>
+      <a href="#works" class="btn">View My Work</a>
+    </div>
+    <div class="hero-visual">
+      <div class="avatar-circle">
+        <span>YN</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>はじめまして！Webエンジニアの<strong>Your Name</strong>です。</p>
+          <p>フロントエンドからバックエンドまで幅広く対応しており、ユーザーが使いやすいプロダクト作りを得意としています。</p>
+          <p>趣味はプログラミング、読書、カフェ巡りです。</p>
+        </div>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-number">3+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">20+</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">10+</span>
+            <span class="stat-label">Clients</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon">🌐</div>
+          <h3>Frontend</h3>
+          <ul>
+            <li>HTML / CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">⚙️</div>
+          <h3>Backend</h3>
+          <ul>
+            <li>Node.js</li>
+            <li>Python</li>
+            <li>SQL</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🎨</div>
+          <h3>Design</h3>
+          <ul>
+            <li>Figma</li>
+            <li>UI/UX Design</li>
+            <li>Responsive Design</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🚀</div>
+          <h3>Tools</h3>
+          <ul>
+            <li>Git / GitHub</li>
+            <li>Docker</li>
+            <li>Vercel / Netlify</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="works" class="section">
+    <div class="container">
+      <h2 class="section-title">Works</h2>
+      <div class="works-grid">
+        <div class="work-card">
+          <div class="work-thumb work-thumb-1"></div>
+          <div class="work-info">
+            <h3>Project Alpha</h3>
+            <p>ECサイトのフロントエンド開発。React + TypeScriptを使用。</p>
+            <div class="work-tags">
+              <span>React</span>
+              <span>TypeScript</span>
+            </div>
+          </div>
+        </div>
+        <div class="work-card">
+          <div class="work-thumb work-thumb-2"></div>
+          <div class="work-info">
+            <h3>Project Beta</h3>
+            <p>タスク管理アプリのフルスタック開発。</p>
+            <div class="work-tags">
+              <span>Node.js</span>
+              <span>MongoDB</span>
+            </div>
+          </div>
+        </div>
+        <div class="work-card">
+          <div class="work-thumb work-thumb-3"></div>
+          <div class="work-info">
+            <h3>Project Gamma</h3>
+            <p>企業サイトのリニューアルデザイン・実装。</p>
+            <div class="work-tags">
+              <span>HTML/CSS</span>
+              <span>Figma</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <p class="contact-desc">お気軽にご連絡ください。</p>
+      <form class="contact-form" onsubmit="handleSubmit(event)">
+        <div class="form-group">
+          <label for="name">名前</label>
+          <input type="text" id="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">メールアドレス</label>
+          <input type="email" id="email" placeholder="your@email.com" required>
+        </div>
+        <div class="form-group">
+          <label for="message">メッセージ</label>
+          <textarea id="message" rows="5" placeholder="メッセージを入力してください" required></textarea>
+        </div>
+        <button type="submit" class="btn">送信する</button>
+      </form>
+      <div id="form-success" class="form-success hidden">送信が完了しました！</div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Your Name. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
