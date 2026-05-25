@@ -5,14 +5,14 @@
 }
 
 :root {
-  --primary: #6c63ff;
-  --primary-dark: #5a52d5;
-  --bg: #0f0f1a;
-  --bg-alt: #16162a;
-  --surface: #1e1e35;
-  --text: #e8e8f0;
-  --text-muted: #9898b0;
-  --border: #2e2e50;
+  --primary: #00bcd4;
+  --primary-dark: #0097a7;
+  --bg: #0a1520;
+  --bg-alt: #0d1e2e;
+  --surface: #112233;
+  --text: #e0f4f8;
+  --text-muted: #7ab8c8;
+  --border: #1a3a4a;
   --radius: 12px;
 }
 
@@ -130,14 +130,14 @@ nav {
   width: 220px;
   height: 220px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--primary) 0%, #ff6584 100%);
+  background: linear-gradient(135deg, var(--primary) 0%, #80deea 100%);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 3rem;
   font-weight: 800;
   color: #fff;
-  box-shadow: 0 0 60px rgba(108, 99, 255, 0.4);
+  box-shadow: 0 0 60px rgba(0, 188, 212, 0.4);
 }
 
 /* ── Sections ── */
@@ -284,9 +284,9 @@ nav {
   height: 180px;
 }
 
-.work-thumb-1 { background: linear-gradient(135deg, #6c63ff, #ff6584); }
-.work-thumb-2 { background: linear-gradient(135deg, #43e97b, #38f9d7); }
-.work-thumb-3 { background: linear-gradient(135deg, #fa8231, #f7b731); }
+.work-thumb-1 { background: linear-gradient(135deg, #00bcd4, #80deea); }
+.work-thumb-2 { background: linear-gradient(135deg, #0097a7, #00bcd4); }
+.work-thumb-3 { background: linear-gradient(135deg, #006978, #00acc1); }
 
 .work-info {
   padding: 1.5rem;
@@ -310,9 +310,9 @@ nav {
 }
 
 .work-tags span {
-  background: rgba(108, 99, 255, 0.15);
+  background: rgba(0, 188, 212, 0.15);
   color: var(--primary);
-  border: 1px solid rgba(108, 99, 255, 0.3);
+  border: 1px solid rgba(0, 188, 212, 0.3);
   border-radius: 50px;
   padding: 0.2rem 0.75rem;
   font-size: 0.8rem;
